@@ -1,0 +1,19 @@
+{
+  "name": "note-making",
+  "version": "1.0.0",
+  "description": "NOTE MAKING USING MERN",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "dev": "nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
