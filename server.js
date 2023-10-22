@@ -18,8 +18,12 @@ connectDB()
 app.use(logger)
 app.use(cors(corsOptions))
 app.use(cookieParser())
+app.use(express.json())
 app.use('/', require('./routes/mainroot'));
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/users', require('./routes/userRoutes'))
+
+app.use('/', express.static(path.join(__dirname, 'public')))
+
 app.all('*', (req, res) => {
     res.status(404)
     if(req.accepts('html')){
@@ -30,7 +34,6 @@ res.json({message:'404 Not found'})
         res.type('txt').send('404 Not found')
     }
 })
-app.use(express.json)
 app.use(errorHandler)
 
 mongoose.connection.once('open', () => {
