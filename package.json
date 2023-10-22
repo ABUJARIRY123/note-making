@@ -20,6 +20,7 @@
     "express-async-handler": "^1.2.0",
     "mongoose": "^7.6.3",
     "mongoose-sequence": "^5.3.1",
+    "react-router-dom": "^6.17.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
