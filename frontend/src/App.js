@@ -24,7 +24,7 @@ function App() {
         <Route path='users'>
         <Route index element={<UsersList />} />
         </Route>
-        </Route>{/*End of Dash*/}
+        </Route>
 
       </Route>
     </Routes>
